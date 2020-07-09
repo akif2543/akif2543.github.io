@@ -4247,11 +4247,20 @@ body.is-preload #banner p {
 
   #footer .inner .contact {
     width: 100%;
-    margin: 0 0 4em 0;
+    /* margin: 0 0 4em 0; */
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  #footer .inner .contact li {
+    width: 50%;
   }
 
   #footer .inner .copyright {
-    margin: 4em 0 2em 0;
+    margin: 1.5em 0 2em 0;
   }
 }
 
@@ -4269,9 +4278,9 @@ body.is-preload #banner p {
     margin: 0 0 3em 0;
   }
 
-  #footer .inner .contact {
+  /* #footer .inner .contact {
     margin: 0 0 3em 0;
-  }
+  } */
 }
 
 @media screen and (max-width: 480px) {
