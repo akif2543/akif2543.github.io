@@ -2530,6 +2530,9 @@ input[type="radio"] + label:before {
 .image img {
   border-radius: 5px;
   display: block;
+}
+
+.features img {
   object-fit: cover;
   height: 250px;
 }
@@ -4134,7 +4137,8 @@ body.is-preload #banner p {
   .wrapper.spotlight .image {
     margin: 0 0 1em 0 !important;
     max-width: 85%;
-    width: 12em;
+    width: 15em;
+    /* width: 12em; */
   }
 }
 
