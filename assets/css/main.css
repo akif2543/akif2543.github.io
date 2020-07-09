@@ -2627,6 +2627,41 @@ dl dd {
   margin-left: 2em;
 }
 
+.skill-list {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.skill-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.skill-list i {
+  font-size: 5em;
+}
+
+.skill-list img {
+  width: 5em;
+  height: 5em;
+  margin-bottom: 1.875em;
+}
+
+.cont li {
+  transform: translateX(1em);
+}
+
+.cont li:last-of-type {
+  transform: translateX(0);
+}
+
 /* Actions */
 
 ul.actions {
@@ -2773,6 +2808,10 @@ ul.icons li .icon:before {
 ul.contact {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 ul.contact li {
@@ -4128,19 +4167,25 @@ body.is-preload #banner p {
   width: 100%;
 }
 
+#footer .inner .major {
+  margin: 0;
+}
+
 #footer .inner form {
   margin: 0 3em 0 0;
   width: calc(50% - 1.5em);
 }
 
 #footer .inner .contact {
-  width: calc(50% - 1.5em);
+  /* width: calc(50% - 1.5em); */
+  width: 100%;
 }
 
 #footer .inner .copyright {
   border-top: solid 2px rgba(255, 255, 255, 0.125);
   list-style: none;
-  margin: 4em 0 2em 0;
+  margin: 0;
+  /* margin: 4em 0 2em 0; */
   padding: 2em 0 0 0;
   width: 100%;
 }
