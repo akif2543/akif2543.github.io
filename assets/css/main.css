@@ -2534,7 +2534,7 @@ input[type="radio"] + label:before {
 
 .features img {
   object-fit: cover;
-  height: 250px;
+  height: 15.625em;
 }
 
 .image.left,
