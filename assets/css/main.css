@@ -2639,6 +2639,10 @@ dl dd {
   padding: 0;
 }
 
+.skill-list.top {
+  margin-top: 3em;
+}
+
 .skill-list li {
   display: flex;
   flex-direction: column;
@@ -2652,17 +2656,93 @@ dl dd {
 }
 
 .skill-list img {
-  width: 5em;
   height: 5em;
   margin-bottom: 1.875em;
 }
 
+.mongo {
+  transform: translateX(0.5em);
+}
+.html5 {
+  transform: translateX(0.75em);
+}
+
+.react,
+.redux {
+  transform: translateX(0.75em);
+}
+
+.express {
+  transform: translateX(0.5em);
+}
+
+/* #three .inner {
+  padding: 2em 0 1em 0;
+} */
+
 .cont li {
-  transform: translateX(1em);
+  transform: translateX(1.25em);
+}
+
+.cont li:first-of-type {
+  transform: translateX(0.75em);
 }
 
 .cont li:last-of-type {
-  transform: translateX(0);
+  transform: translateX(1em);
+}
+
+@media screen and (max-width: 736px) {
+  .skill-list img {
+    height: 4em;
+  }
+
+  .react,
+  .redux {
+    transform: translateX(0);
+  }
+
+  .cont li {
+    transform: translateX(0);
+  }
+
+  .cont li:first-of-type {
+    transform: translateX(0);
+  }
+
+  .js {
+    transform: translateX(-0.5em);
+  }
+
+  .node {
+    transform: translateX(-0.25em);
+  }
+
+  .mongo {
+    transform: translateX(0.75em);
+  }
+
+  .rails,
+  .css {
+    transform: translateX(1em) !important;
+  }
+
+  .psql {
+    transform: translateX(1em);
+  }
+
+  .html5 {
+    transform: translateX(0.5em);
+  }
+
+  .redux,
+  .mongo,
+  .express,
+  .html5,
+  .css,
+  .scss {
+    margin-top: 3em;
+  }
 }
 
 /* Actions */
